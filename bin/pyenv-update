@@ -65,7 +65,7 @@ update_repo() {
   (
     cd "${repo}" && \
     git fetch --tags "${REMOTE}" "${BRANCH_CHOICE}" && \
-    git merge --ff "${REMOTE}" "${BRANCH_CHOICE}"
+    git merge --ff "${REMOTE}"/"${BRANCH_CHOICE}"
   )
 }
 
